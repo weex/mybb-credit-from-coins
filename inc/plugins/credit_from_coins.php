@@ -131,7 +131,7 @@ function credit_from_coins_deactivate()
 {
 	global $db;
 	require MYBB_ROOT."/inc/adminfunctions_templates.php";
-	$db->delete_query("settings","name IN ('credit_from_coins_amounts','credit_from_coins_cost','credit_from_coins_secret,'credit_from_coins_field','credit_from_coins_name','credit_from_coins_address')",'');
+	$db->delete_query("settings","name IN ('credit_from_coins_amounts','credit_from_coins_cost','credit_from_coins_secret','credit_from_coins_field','credit_from_coins_name','credit_from_coins_address')",'');
 	$db->delete_query("settinggroups","name='credit_from_coins_group'",'');
 	$db->query("DROP TABLE ".TABLE_PREFIX."creditfromcoins_logs");
 	rebuild_settings();
