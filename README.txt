@@ -1,13 +1,13 @@
 Credit From Coins
 
-Version : 1.0
+Version : 1.1
 License : Creative Commons Attribution-NonCommercial 3.0 
 Price : free
 Project released by : David Sterry
 
 Based on Buy Credit by developer Mihu from MyBBRomania Team http://mybb.ro
 
-Last change : 02.01.2013
+Last change : 03.13.2015
 
 ENGLISH LANGUAGE
 I. Introduction
@@ -23,7 +23,9 @@ There are 6 configuration settings to this plugin:
 
 * Enter Bitcoin Address - Blockchain.info supplies a new Bitcoin address for each payment but forwards every payment onto the address you enter here. It's a good idea to update this periodically for privacy purposes.
 
-* The name of database field - This is the field in the `users` table where points amounts are stored. You may need to create this field and should create it as a decimal(16,8) MySQL field. Amounts stored here will be incremented when a payment is received.
+* The name of database field - This is the field in the `users` table where points amounts are stored. You may need to create this field if you don't already have a points system like NewPoints isntalled and should create it as a decimal(16,8) MySQL field. Amounts stored here will be incremented when a payment is received. 
+
+    ALTER TABLE users ADD `points` decimal(16,8) DEFAULT 0;
 
 * Points name - Set your points name so they are referred to correctly by the pages supplied by this plugin.
 
