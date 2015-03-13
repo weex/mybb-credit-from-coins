@@ -25,9 +25,9 @@ function credit_from_coins_info()
         "website"			=> "http://davidsterry.com/credit_from_coins",
         "author"			=> "David Sterry",
         "authorsite"		=> "http://davidsterry.com",
-        "version"			=> "1.0",
+        "version"			=> "1.1",
         "guid"              => "feaa1a06c281034fdcd621c688048b68",
-		'compatibility'     => '14*,16*',
+		'compatibility'     => '14*,16*,18*',
                 );
 }
 //Activate plugin
